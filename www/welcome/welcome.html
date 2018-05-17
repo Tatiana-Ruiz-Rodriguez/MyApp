@@ -1,0 +1,58 @@
+<ion-view>
+	
+	<ion-header-bar class="bar-stable">
+		<h1 class="title">Ionic Blank Starter</h1>
+	</ion-header-bar>
+	<ion-content>
+		<div>{{welcome}}</div>
+
+<div class="hide">
+		<input type="checkbox" ng-model="dato1">
+		<input type="checkbox" ng-model="dato2">
+
+		<h2 ng-show="dato1">Dato 1</h2>
+		<h2 ng-show="dato2">Dato 2</h2>
+</div>
+		
+		<div class="list card">
+
+			<div class="item item-avatar">
+				<img src="../img/gb.svg" alt="Packers">
+				<h2>Green Bay</h2>
+				<h3>Packers</h3>
+			</div>
+			<div class="item item-body">
+				<img src="img/gb-f.jpg" alt="Lambeau Field" height="200px">
+				<p>The Green Bay Packers are a professional American football team based in Green Bay, Wisconsin. The Packers compete in the National Football League as a member club of the league's National Football Conference North division.</p>
+				<a href="#" class="subdued">1 like</a>
+				<a href="#" class="subdued">1 comment</a>
+			</div>			
+
+		</div>
+
+
+		<ion-list>
+			
+			<ion-item>Cleveland Browns</ion-item>
+			<ion-item>New York Giants</ion-item>
+			<ion-item>New Yokr Jets</ion-item>
+			<ion-item>Denver Broncos
+				<ion-delte-buttom class="ion-minus-circled" ng-click="eliminar()"></ion-delte-buttom></ion-item>
+			<ion-item>Indianapolis Colts</ion-item>
+
+		</ion-list>
+
+		<cliente nombre="'Tatiana Ruiz'"></cliente>
+
+	</ion-content>
+
+
+</ion-view>
+<!-- 
+ng-app
+ng-controller
+ng-model
+ng-change
+ng-click
+ng-blind
+-->
